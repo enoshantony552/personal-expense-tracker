@@ -1,0 +1,321 @@
+/* Main page */
+.dashboard-page {
+  min-height: 100vh;
+  background-color: #06131d;
+  background-image:
+    linear-gradient(
+      rgba(2, 15, 23, 0.88),
+      rgba(1, 12, 24, 0.94)
+    ),
+    url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=2000&q=85");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: #f1f5f9;
+}
+
+/* Navbar */
+.dashboard-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 7%;
+  background: rgba(3, 15, 24, 0.92);
+  border-bottom: 1px solid rgba(0, 230, 160, 0.2);
+}
+
+.dashboard-navbar h2 {
+  margin: 0;
+  color: #00e6a0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.dashboard-logout {
+  padding: 10px 22px;
+  border: 1px solid #00e6a0;
+  border-radius: 7px;
+  background: transparent;
+  color: #00e6a0;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dashboard-logout:hover {
+  background: #00e6a0;
+  color: #06131d;
+}
+
+/* Hero section */
+.dashboard-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 75px 8%;
+}
+
+/* Welcome content */
+.dashboard-welcome {
+  flex: 1;
+  max-width: 570px;
+}
+
+.dashboard-tagline {
+  color: #00e6a0;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.dashboard-welcome h1 {
+  font-size: 44px;
+  line-height: 1.2;
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+
+.dashboard-welcome h1 span {
+  color: #00e6a0;
+}
+
+.dashboard-description {
+  color: #b8c6d2;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+/* User information */
+.dashboard-user {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 15px;
+  margin-bottom: 25px;
+  background: rgba(9, 28, 40, 0.85);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 230, 160, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.dashboard-avatar {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 230, 160, 0.15);
+  border: 1px solid rgba(0, 230, 160, 0.3);
+  border-radius: 50%;
+  font-size: 23px;
+}
+
+.dashboard-user-label {
+  margin: 0 0 5px;
+  color: #aabac8;
+  font-size: 12px;
+}
+
+.dashboard-email {
+  margin: 0;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  overflow-wrap: anywhere;
+}
+
+/* Manage button */
+.dashboard-manage-btn {
+  padding: 14px 25px;
+  background: #00b982;
+  color: #06131d;
+  border: 1px solid #00e6a0;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dashboard-manage-btn:hover {
+  background: #00e6a0;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(0, 230, 160, 0.2);
+}
+
+/* Expense preview card */
+.dashboard-preview {
+  flex: 1;
+  max-width: 440px;
+  padding: 35px;
+  background: rgba(9, 28, 40, 0.88);
+  border: 1px solid rgba(0, 230, 160, 0.3);
+  border-radius: 20px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(14px);
+  transition: transform 0.3s;
+}
+
+.dashboard-preview:hover {
+  transform: translateY(-5px);
+}
+
+.dashboard-money-icon {
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.dashboard-preview h2 {
+  text-align: center;
+  color: #f1f5f9;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.dashboard-preview-text {
+  text-align: center;
+  color: #aabac8;
+  margin-bottom: 25px;
+}
+
+.dashboard-expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 9px;
+  color: #f1f5f9;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.dashboard-expense-item:hover {
+  background: rgba(0, 230, 160, 0.1);
+}
+
+.dashboard-expense-item span:last-child {
+  color: #00e6a0;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Features section */
+.dashboard-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 35px 8% 65px;
+  background: rgba(2, 12, 22, 0.72);
+  border-top: 1px solid rgba(0, 230, 160, 0.12);
+}
+
+.dashboard-feature-card {
+  padding: 30px 24px;
+  text-align: center;
+  background: rgba(13, 31, 45, 0.85);
+  border: 1px solid rgba(0, 230, 160, 0.2);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.dashboard-feature-card:hover {
+  transform: translateY(-5px);
+  background: rgba(19, 43, 57, 0.96);
+  border-color: #00e6a0;
+}
+
+.dashboard-feature-icon {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.dashboard-feature-card h3 {
+  color: #f1f5f9;
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+
+.dashboard-feature-card p {
+  color: #b8c6d2;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Footer */
+.dashboard-footer {
+  padding: 22px 15px;
+  text-align: center;
+  color: #00e6a0;
+  background: rgba(2, 12, 22, 0.95);
+  border-top: 1px solid rgba(0, 230, 160, 0.15);
+  font-size: 13px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .dashboard-hero {
+    gap: 30px;
+    padding: 55px 5%;
+  }
+
+  .dashboard-welcome h1 {
+    font-size: 35px;
+  }
+
+  .dashboard-preview {
+    padding: 25px;
+  }
+
+  .dashboard-features {
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+  .dashboard-navbar {
+    padding: 18px 5%;
+  }
+
+  .dashboard-navbar h2 {
+    font-size: 20px;
+  }
+
+  .dashboard-hero {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 45px 6%;
+  }
+
+  .dashboard-welcome,
+  .dashboard-preview {
+    max-width: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .dashboard-welcome h1 {
+    font-size: 34px;
+  }
+
+  .dashboard-features {
+    grid-template-columns: 1fr;
+    padding: 30px 6% 45px;
+  }
+}

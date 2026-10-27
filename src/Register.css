@@ -1,0 +1,196 @@
+/* Page background */
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 15px;
+  box-sizing: border-box;
+  background-color: #06131d;
+  background-image:
+    linear-gradient(
+      rgba(2, 15, 23, 0.85),
+      rgba(1, 12, 24, 0.92)
+    ),
+    url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=2000&q=85");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+}
+
+/* Registration card */
+.register-card {
+  width: 100%;
+  max-width: 460px;
+  box-sizing: border-box;
+  padding: 35px;
+  background: rgba(9, 28, 40, 0.88);
+  border: 1px solid rgba(0, 230, 160, 0.3);
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(14px);
+}
+
+/* Heading */
+.register-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.register-icon {
+  font-size: 52px;
+  margin-bottom: 10px;
+}
+
+.register-header h2 {
+  color: #00e6a0;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.register-header p {
+  color: #b8c6d2;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Form fields */
+.register-field {
+  margin-bottom: 19px;
+}
+
+.register-field label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+.register-field input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #344b59;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.register-field input::placeholder {
+  color: #91a2af;
+}
+
+.register-field input:focus {
+  border-color: #00e6a0;
+  box-shadow: 0 0 0 3px rgba(0, 230, 160, 0.15);
+}
+
+/* Browser autofill */
+.register-field input:-webkit-autofill {
+  -webkit-text-fill-color: #ffffff;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+/* Register button */
+.register-btn {
+  width: 100%;
+  padding: 13px;
+  margin-top: 3px;
+  border: 1px solid #00e6a0;
+  border-radius: 7px;
+  background: #00b982;
+  color: #06131d;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.register-btn:hover {
+  background: #00e6a0;
+  transform: translateY(-2px);
+}
+
+/* Validation message */
+.register-message {
+  padding: 11px;
+  margin: 0 0 18px;
+  border: 1px solid #842029;
+  border-radius: 7px;
+  background: rgba(248, 215, 218, 0.12);
+  color: #ffb8bf;
+  font-size: 14px;
+}
+
+/* Login and home buttons */
+.register-actions {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.register-actions p {
+  color: #b8c6d2;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #00e6a0;
+  border-radius: 7px;
+  background: transparent;
+  color: #00e6a0;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login-btn:hover {
+  background: #00e6a0;
+  color: #06131d;
+}
+
+.home-btn {
+  display: block;
+  margin: 12px auto 0;
+  padding: 8px 12px;
+  border: none;
+  background: transparent;
+  color: #b8c6d2;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.home-btn:hover {
+  color: #00e6a0;
+}
+
+/* Footer */
+.register-footer {
+  margin: 20px 0 0;
+  text-align: center;
+  color: #b8c6d2;
+  font-size: 13px;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+  .register-card {
+    padding: 25px 20px;
+    border-radius: 15px;
+  }
+
+  .register-header h2 {
+    font-size: 24px;
+  }
+}
